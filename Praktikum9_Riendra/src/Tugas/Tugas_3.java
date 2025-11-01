@@ -30,6 +30,8 @@ public class Tugas_3 {
         
          fib1 = 0; // mereset value
          fib2 = 1;
+            System.out.println("Sum Of 0 + 0 = 0");
+            System.out.println("Sum Of 1 + 0 = 1");
         for(i=1;i <= r;i++){ //looping sesuai Range yang di input
 
             fibo = fib1 + fib2;
