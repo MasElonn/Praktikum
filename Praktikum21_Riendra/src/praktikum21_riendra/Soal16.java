@@ -18,10 +18,11 @@ public class Soal16 {
 
             for (int n : siswa) {
                 total += n;
+                System.out.println("Nilai Siswa " + nomorSiswa+": "+n);
             }
 
             double rata = (double) total / siswa.length;
-            System.out.println("Rata-rata siswa " + nomorSiswa + ": " + rata);
+            System.out.println("Rata-rata siswa " + nomorSiswa + ": " + rata+"\n");
 
             nomorSiswa++;
         }

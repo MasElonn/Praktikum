@@ -1,5 +1,5 @@
 package praktikum21_riendra;
-interface Diskon {
+interface IDiskon {
    public void hitungdiskon();
     
 }
@@ -18,7 +18,7 @@ class Buku{
 }
 
 //////////////////////////////////////////////////////////////////////////
-class Bukufiksi extends Buku implements Diskon {
+class Bukufiksi extends Buku implements IDiskon {
 private double hargaseldiskon, jumdiskon;
 private String judul, penulis;
     
@@ -37,13 +37,13 @@ private String judul, penulis;
     public void tampildata(){
         hitungdiskon();
         
-        System.out.println("Judul buku                  : " + this.judul);
-        System.out.println("Penulis buku                : " + this.penulis);
-        System.out.println("Harga asli                  : " + hargaasli);
+        System.out.println("Judul buku: " + this.judul);
+        System.out.println("Penulis buku: " + this.penulis);
+        System.out.println("Harga asli: " + hargaasli);
         System.out.println("Harga setelah diskon diskon : " + hargaseldiskon);
     }
 }
-class NonBukufiksi extends Buku implements Diskon {
+class NonBukufiksi extends Buku implements IDiskon {
 private double hargaseldiskon, jumdiskon;
 private String judul, penulis;
     
@@ -62,9 +62,9 @@ private String judul, penulis;
     public void tampildata(){
         hitungdiskon();
         
-        System.out.println("Judul buku                  : " + this.judul);
-        System.out.println("Penulis buku                : " + this.penulis);
-        System.out.println("Harga asli                  : " + hargaasli);
+        System.out.println("Judul buku: " + this.judul);
+        System.out.println("Penulis buku: " + this.penulis);
+        System.out.println("Harga asli: " + hargaasli);
         System.out.println("Harga setelah diskon diskon : " + hargaseldiskon);
     }
 }

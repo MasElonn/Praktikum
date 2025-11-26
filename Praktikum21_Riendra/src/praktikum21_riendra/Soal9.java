@@ -20,9 +20,9 @@ class CashPayment implements Payable{
     @Override
     public void printRecipt() {
         System.out.println("=======  Pembayaran Cash  =======");
-        System.out.println("Total Pembayaran    : "+tBayar);
+        System.out.println("Total Pembayaran : "+tBayar);
         System.out.println("Uang Yang diterima : "+amount);
-        System.out.println("Uang Kembalian       : "+(amount-tBayar));
+        System.out.println("Uang Kembalian : "+(amount-tBayar));
     }
     
 }
@@ -43,7 +43,7 @@ class DigitalPayment implements Payable{
     @Override
     public void printRecipt() {
         System.out.println("\n=======  Pembayaran Digital  =======");
-        System.out.println("Aplikasi Pembayaran    :"+nama);
+        System.out.println("Aplikasi Pembayaran :"+nama);
         System.out.println("Uang yang Dibayarkan : "+amount);
        
     }

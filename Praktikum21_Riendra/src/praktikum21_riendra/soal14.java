@@ -23,7 +23,7 @@ public class soal14 {
         range=sc.nextInt();
         for(int i = 2; i < range;i++){
             if(cekPrima(i)){
-                System.out.println(i+" Adalah Angka PRIMA");
+                System.out.println(i+" ADALAH Angka PRIMA");
             } else{
                 System.out.println(i+" Bukan Angka Prima");
             }
