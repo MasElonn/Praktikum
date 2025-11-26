@@ -6,18 +6,22 @@ public class Soal4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] nilai = new int[5];
-        int total = 0,tertinggi = 0,terendah = 100;
-
         for (int i = 0; i < nilai.length; i++) {
             System.out.print("Masukkan nilai ke-" + (i + 1) + ": ");
             nilai[i] = sc.nextInt();
-            total += nilai[i];
-            
-            if (nilai[i] > tertinggi) {
-                tertinggi = nilai[i];
+        }
+
+        int total = 0;
+        int tertinggi = nilai[0];
+        int terendah = nilai[0];
+
+        for (int n : nilai) {
+            total += n;
+            if (n > tertinggi) {
+                tertinggi = n;
             }
-            if (nilai[i] < terendah) {
-                terendah = nilai[i];
+            if (n < terendah) {
+                terendah = n;
             }
         }
 
