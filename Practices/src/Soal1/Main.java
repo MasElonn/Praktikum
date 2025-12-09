@@ -1,7 +1,7 @@
 package Soal1;
 
 interface Garansi{
-    int hitungMasaGaransi(int tahunPembelian);
+    public int hitungMasaGaransi(int tahunPembelian);
 }
 
 class Produk{
