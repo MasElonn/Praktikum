@@ -32,6 +32,7 @@ public class Soal10 {
         }
 
         Buku bukuTermahal = daftarBuku[0];
+        
         for (int i = 1; i < daftarBuku.length; i++) {
             if (daftarBuku[i].harga > bukuTermahal.harga) {
                 bukuTermahal = daftarBuku[i];

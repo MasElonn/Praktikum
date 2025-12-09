@@ -1,3 +1,49 @@
+# Compiled class files
+*.class
+
+# Package Files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Log Files
+*.log
+log/
+logs/
+
+# IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Maven generated files
+target/
+
+# Gradle generated files
+.gradle/
+build/
+
+# NetBeans specific files
+nbproject/
+nbbuild/
+dist/
+nbactions.xml
+nb-configuration.xml
+
+# Eclipse specific files
+.project
+.classpath
+.settings/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Custom entries from previous .gitignore (if still relevant)
 Praktikum11_Riendra/src/praktikum11_riendra/ArrayKelas.java
 praktikum16_nafis_abi_nasuha/
 /Praktikum17_Riendra/nbproject/private/
@@ -10,3 +56,4 @@ praktikum16_nafis_abi_nasuha/
 /Praktikum20_Riendra/build/
 /Praktikum21_Riendra/nbproject/private/
 /Praktikum21_Riendra/build/
+

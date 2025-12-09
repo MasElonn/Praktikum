@@ -33,19 +33,4 @@ public class NestedIf {
 }
 
 
-         if(nilai_akhir >= 0 && nilai_akhir <= 100) {
-            if(nilai_akhir >= 90 && nilai_akhir<= 100) {
-                System.out.println("Nilai A, EXCELENT");
-            } else if (nilai_akhir >= 80 && nilai_akhir <= 89) {
-                System.out.println("Nilai B, Tingkatkan Prestasi");
-            } else if(nilai_akhir >= 60 && nilai_akhir <= 79) {
-                System.out.println("Nilai C, Belajar Lagi");
-            } else if(nilai_akhir >= 50 && nilai_akhir <= 59) {
-                System.out.println("Nilai D, Nice Try");
-            } else {
-                System.out.println("Nilai E, 🤦🤦");
-            }
-            
-            } else {
-            System.out.println("Nilai Invalid, Masukkan 0 - 100");
-         }
+         

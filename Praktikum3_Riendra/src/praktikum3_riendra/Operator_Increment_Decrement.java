@@ -10,7 +10,7 @@ package praktikum3_riendra;
  */
 public class Operator_Increment_Decrement {
     public static void main(String[] args) {
-        int a = 5, b = 5, c = 5, d = 5;
+        int a = 5, b = 5, c = 5, d = 545356;
         
         // Increment
         a++;

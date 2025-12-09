@@ -1,0 +1,50 @@
+Soal Latihan Tambahan
+
+  Soal 1: Kombinasi Class, Inheritance, dan Interface
+
+   * Judul: Sistem Inventaris Toko Elektronik
+   * Deskripsi:
+       1. Buat superclass bernama Produk dengan atribut protected: nama (String), harga (double), dan stok (int).
+          Superclass ini memiliki method tampilkanInfo() yang akan di-override.
+       2. Buat dua subclass: Smartphone dan Laptop yang merupakan turunan dari Produk.
+           * Smartphone memiliki atribut tambahan: ukuranLayar (double) dan kapasitasBaterai (int).
+           * Laptop memiliki atribut tambahan: ramSize (int) dan jenisProsesor (String).
+           * Override method tampilkanInfo() di kedua subclass untuk menampilkan semua detail spesifik dari masing-masing
+             produk.
+       3. Buat sebuah interface bernama Garansi yang memiliki method hitungMasaGaransi(int tahunPembelian).
+       4. Implementasikan interface Garansi pada class Laptop. Jika laptop dibeli setelah tahun 2023, garansinya 2 tahun,
+          jika tidak hanya 1 tahun. Method ini harus mengembalikan nilai integer (masa garansi).
+       5. Di class main, buat beberapa objek Smartphone dan Laptop, masukkan ke dalam sebuah array Produk, lalu tampilkan
+          informasi lengkap setiap produk menggunakan perulangan. Untuk objek Laptop, tampilkan juga masa garansinya.
+
+  Soal 2: Array of Objects dan Enkapsulasi
+
+   * Judul: Manajemen Jadwal Mata Kuliah
+   * Deskripsi:
+       1. Buat sebuah class MataKuliah dengan atribut private: kodeMK (String), namaMK (String), namaDosen (String), dan
+          jumlahSKS (int).
+       2. Gunakan enkapsulasi: sediakan constructor untuk menginisialisasi semua atribut, dan sediakan method getter untuk
+          setiap atribut. Setter tidak perlu dibuat (data bersifat read-only setelah objek dibuat).
+       3. Buat sebuah class Jadwal yang memiliki atribut private: hari (String) dan daftarMataKuliah (sebuah array dari
+          objek MataKuliah).
+       4. Class Jadwal memiliki method tambahMataKuliah(MataKuliah mk) untuk menambahkan objek MataKuliah ke dalam array
+          dan tampilkanJadwal() untuk menampilkan semua mata kuliah yang ada pada hari tersebut, lengkap dengan total SKS.
+       5. Di class main, simulasikan pembuatan jadwal untuk hari Senin. Buat beberapa objek MataKuliah, tambahkan ke
+          objek Jadwal, lalu tampilkan jadwal lengkap untuk hari Senin beserta total SKS yang harus diambil.
+
+  Soal 3: Logika Percabangan dan Fungsi
+
+   * Judul: Kalkulator Biaya Pengiriman Paket
+   * Deskripsi:
+       1. Buat sebuah program yang menghitung total biaya pengiriman paket berdasarkan berat (kg) dan jarak (km).
+       2. Buat sebuah fungsi hitungBiaya(double berat, int jarak) yang mengembalikan nilai double (total biaya).
+       3. Logika perhitungan biaya:
+           * Biaya dasar per kg adalah Rp 5.000.
+           * Biaya tambahan berdasarkan jarak:
+               * Jika jarak <= 10 km, biaya tambahan Rp 10.000.
+               * Jika jarak > 10 km dan <= 50 km, biaya tambahan Rp 25.000.
+               * Jika jarak > 50 km, biaya tambahan Rp 50.000.
+           * Ada biaya asuransi jika berat paket lebih dari 5 kg, yaitu sebesar Rp 15.000.
+       4. Rumus: Total Biaya = (berat * 5000) + biaya_tambahan_jarak + biaya_asuransi (jika ada).
+       5. Di main, minta input dari pengguna untuk berat dan jarak, panggil fungsi hitungBiaya, dan tampilkan hasilnya ke
+          layar.

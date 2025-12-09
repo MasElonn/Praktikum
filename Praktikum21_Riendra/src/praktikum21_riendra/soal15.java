@@ -1,3 +1,4 @@
+package praktikum21_riendra;
 
 class Karyawan {
     private String nama;

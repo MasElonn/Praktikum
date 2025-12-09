@@ -36,8 +36,8 @@ public class Soal1 {
         System.out.println("Nama Barang: " + nama);
         System.out.println("Jumlah: " + jumlah);
         System.out.println("Total Sebelum Diskon: " + sDiskon);
-        System.out.println("Besar Diskon: " + (sDiskon * (diskon / 100.0)));
-        tBayar = (int) (sDiskon - (sDiskon * (diskon / 100.0)));
+        System.out.println("Besar Diskon: " + (sDiskon * (diskon / 100)));
+        tBayar = (int) (sDiskon - (sDiskon * (diskon / 100)));
         System.out.println("Total Bayar Akhir: " + tBayar);
     }
 
